@@ -5,6 +5,8 @@ from db.orm.utils import init_db
 from dotenv import load_dotenv
 import os
 
+from config.cfg import init_conf
+
 from handlers import start, admin, quote
 
 load_dotenv()
@@ -16,6 +18,7 @@ dp = Dispatcher()
 
 async def main():
     await init_db()
+    await init_conf()
     dp.include_routers(start.router, admin.router, quote.router)
     await dp.start_polling(bot)
 

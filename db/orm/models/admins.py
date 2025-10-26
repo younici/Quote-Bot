@@ -7,4 +7,4 @@ class Admins(Base):
     id = Column(Integer, primary_key=True, autoincrement=True)
     tg_id = Column(Integer, nullable=False)
     username = Column(String(50), nullable=True)
-    name = Column(String(50), nullable=True)
+    name = Column(String(50), nullable=False)

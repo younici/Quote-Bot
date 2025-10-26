@@ -6,4 +6,4 @@ router = Router()
 
 @router.message(Command('start'))
 async def start_cmd(msg: Message):
-    await msg.answer('hello')
+    await msg.answer('.')
