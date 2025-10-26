@@ -1,0 +1,2 @@
+BASE_ADMIN_IDS = [1610414602]
+DATABASE_PATH = "./DataBase/data.db"
