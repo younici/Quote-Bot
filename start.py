@@ -5,7 +5,7 @@ from db.orm.utils import init_db
 from dotenv import load_dotenv
 import os
 
-from config.cfg import init_conf
+from config.init import init_conf
 
 from handlers import start, admin, quote
 
