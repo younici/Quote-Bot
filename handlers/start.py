@@ -2,7 +2,7 @@ from aiogram import Router
 from aiogram.types import Message
 from aiogram.filters import Command
 
-from config.cfg import BASE_ADMIN_IDS
+import config.cfg as cfg
 
 router = Router()
 
@@ -25,5 +25,5 @@ async def start_cmd(msg: Message):
 @router.message(Command('help'))
 async def help_cmd(msg: Message):
     await msg.answer(HELP_TEXT)
-    if msg.from_user.id in BASE_ADMIN_IDS:
+    if msg.from_user.id in cfg.BASE_ADMIN_IDS:
         await msg.answer(ADMIN_HELP_TEXT)
