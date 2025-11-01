@@ -14,20 +14,14 @@ git clone https://github.com/younici/Quote-Bot.git
 cd Quote-Bot
 python -m venv venv
 source venv/bin/activate  # or venv\Scripts\activate on Windows
-pip install -r requirements.txt
+pip install -r requirements.txt```
+
 Create .env file:
-
-ini
-Копировать код
 TG_BOT_TOKEN=your_token_here
-Run the bot:
 
-bash
-Копировать код
+Run the bot:
 python main.py
 Project Structure
-arduino
-Копировать код
 Quote-Bot/
 ├─ db/           # database & ORM
 ├─ handlers/     # command handlers
